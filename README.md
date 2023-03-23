@@ -162,19 +162,3 @@ Lista de tags e seus significados para commits:
 * **bump:** Atualização de biblioteca ou framework
 
 <p align="center">(<a href="#readme-top">Voltar ao topo</a>)</p>
-
-proximos passos:
-Cypress - automatizando a jornada de visualizar o saldo no DevFinance
-
-funcao each 14m
-
-invoke 15m
-
-spark 07
-
-open roda normal 
-run roda headless
-
-mudar pra PT e colocar contexto
-
-tag 45m Cucumber com Cypress, passo a passo | AgiliDrops #03
