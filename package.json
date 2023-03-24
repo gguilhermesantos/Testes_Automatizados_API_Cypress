@@ -1,0 +1,23 @@
+{
+  "name": "testes_automatizados_api_cypress",
+  "version": "1.0.0",
+  "description": "<a name=\"readme-top\"></a> # Testes Automatizados de api em Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/gguilhermesantos/Testes_Automatizados_API_Cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gguilhermesantos/Testes_Automatizados_API_Cypress/issues"
+  },
+  "homepage": "https://github.com/gguilhermesantos/Testes_Automatizados_API_Cypress#readme",
+  "devDependencies": {
+    "cypress": "^12.8.1"
+  }
+}
