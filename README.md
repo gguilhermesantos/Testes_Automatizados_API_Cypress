@@ -79,7 +79,7 @@ Caso não funcione o push opte por esse metodo: [Clique aqui](https://www.doacti
 
 * vá em `Settings` e depois `Developer Settings`
 * Clique em `Personal access tokens` e a seguir em `Tokens (classic)`
-* Generate new token:
+* Clique em `Generate new token` e a seguir `Generate new token (classic)`
 * Dê um nome para seu token em Note e a seguir marque os checkboxes para habilitar as permissões
   - Gerar o token
 * Agora, você deve copiar o seu token:
