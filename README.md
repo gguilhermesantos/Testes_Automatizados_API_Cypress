@@ -10,54 +10,17 @@ Estas instruções fornecerão uma cópia do projeto em execução em sua máqui
 ### Pré requisitos
 
 * Ter inicializado e configurado um repositório git
-* Ter conhecimentos no site a ser testado: https://www.saucedemo.com/
+* Ter conhecimentos na API a ser testado: https://deckofcardsapi.com/ ou https://makeup-api.herokuapp.com/
 * Ter instalado [Node](https://nodejs.org/en/download/)
 
 ### Instalando
 
 * `npm init --yes` - cria o arquivo package.json 
 * `npm install -D cypress` ou `npm install cypress --save-dev` - Instalação do Cypress (node_modules)
-* `npm install --save-dev cypress-cucumber-preprocessor` - Instalação do cucumber para utilização da estrutura do Gherkin - está depressiado
-* `npm install -D @bahmutov/cypress-esbuild-preprocessor` - Instalação do cucumber para utilização da estrutura do Gherkin na versão 10 do cy
-* `npm install --save-dev @badeball/cypress-cucumber-preprocessor` - Instalação do cucumber para utilização da estrutura do Gherkin na versão 10 do cy
-* `npm install --save-dev @cucumber/cucumber` - Instalação do cucumber para utilização da estrutura do Gherkin
 * `npm i` - Instalação das dependências (redundância) 
 * `npx cypress open` - cria estrutura para o cypress e pode dar timeout na primeira vez.
 
 Após aberto, clicar em **E2E Testing** > **Continue** > Escolher um navegador de sua preferencia e clicar em **Start E2E Testing in Chrome** e assim estará tudo pronto para começar o desenvolvimento.
-
-Para utilizar BDD:
-
-* Dentro da pasta `e2e` colocar os arquivos `.feature`
-* Dentro de `support` colocar os arquivos em pastas de definições das features, page object e elementos da pagina 
-* Alterar arquivo `cypress.config.js` com setup do cucumber
-Ex.
-```js
-const { defineConfig } = require("cypress");
-const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
-const preprocessor = require("@badeball/cypress-cucumber-preprocessor");
-const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild");
-
-async function setupNodeEvents(on, config) {
-  await preprocessor.addCucumberPreprocessorPlugin(on, config);
-
-  on(
-    "file:preprocessor",
-    createBundler({
-      plugins: [createEsbuildPlugin.default(config)],
-    })
-  );
-  return config;
-}
-
-module.exports = defineConfig({
-  e2e: {
-    specPattern: "**/*.feature",
-    supportFile: false,
-    setupNodeEvents,
-  },
-});
-```
 
 ## Rodando testes
 
@@ -65,13 +28,6 @@ module.exports = defineConfig({
 `npx cypress open` - verifica o cypress pode ser executado (pode dar timeout na primeira vez) e criar a estrutura de pastas
 
 * Após a abertura do Cypress, acessar E2E Testing, onde se executa toda a aplicação. Por fim, você verá a lista de navegadores compatíveis que o Cypress encontrou em seu sistema.
-
-* Para rodar testes:
-* No terminal, na pasta do projeto, rodar o comando:
-```sh
-npx cypress run --spec "cypress/e2e/Features/login.feature"
-```
-Caso rode sem a tag, vai rodar todos os testes
 
 ## Comandos úteis
 
@@ -91,8 +47,8 @@ Caso rode sem a tag, vai rodar todos os testes
 
 ### Cypress
 
-Utilizar nos arquivos `.spec.js` o comando `/// <reference types="cypress" />` para deixar mais facil o acesso à documentação e infos sobre os comandos
-* `hooks`
+Utilizar nos arquivos `.spec.js` o comando `/// <reference types="cypress" />` para deixar mais facil o acesso à documentação e infos sobre os comandos:
+
 * `before` - executa antes de todos os testes
 * `beforeEach` - Executa antes de cada teste
 * `after` - executa depois de todos os testes
@@ -134,17 +90,11 @@ git push -u origin master
 ```
 
 ### Links úteis
-* [cypress-cucumber-preprocessor](https://github.com/badeball/cypress-cucumber-preprocessor)
-* [Instalação cucumber](https://cucumber.io/docs/installation/javascript/)
-* [Vídeo sobre automação com Cypress](https://lnkd.in/dA6yqm5M)
+* [Vídeo sobre automação de API com Cypress 1](https://www.youtube.com/watch?v=C8tFAB0pGVs)
+* [Vídeo sobre automação de API com Cypress 2](https://www.youtube.com/watch?v=3q4l3wzFiMI)
+* [Vídeo sobre automação de API com Cypress 3](https://www.youtube.com/watch?v=Bor_OqOjEuQ)
 * [Instalação Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress)
 * [comandos do Cypress](https://docs.cypress.io/api/commands/get)
-* [Gherkin no cypress](https://dev.to/leading-edje/using-gherkin-with-your-cypress-tests-4p20)
-* [Page Object no Cypress](https://dev.to/leading-edje/using-page-objects-in-cypress-co9)
-* [Caso de config do cypress](https://dev.to/kailashpathak7/how-to-integrate-bdd-cucumber-in-cypress-10-50ef)
-* [Github utilizado no projeto](https://github.com/bahmutov/cypress-esbuild-preprocessor)
-* [Github utilizado no projeto](https://github.com/badeball/cypress-cucumber-preprocessor)
-* [Cucumber no cypress 10](https://dev.to/kailashpathak7/how-to-integrate-bdd-cucumber-in-cypress-10-50ef)
 * [Site sobre cypress](https://talkingabouttesting.com/)
 
 ### Tags para commit
