@@ -94,8 +94,10 @@ git push -u origin master
 * [Vídeo sobre automação de API com Cypress 2](https://www.youtube.com/watch?v=3q4l3wzFiMI)
 * [Vídeo sobre automação de API com Cypress 3](https://www.youtube.com/watch?v=Bor_OqOjEuQ)
 * [Instalação Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress)
-* [comandos do Cypress](https://docs.cypress.io/api/commands/get)
+* [Comandos do Cypress](https://docs.cypress.io/api/commands/request)
 * [Site sobre cypress](https://talkingabouttesting.com/)
+* [site sobre api com cypress](https://filiphric.com/working-with-api-response-data-in-cypress)
+* [github que ajudou](https://github.com/saymowan/cypress-api-testing)
 
 ### Tags para commit
 Lista de tags e seus significados para commits:

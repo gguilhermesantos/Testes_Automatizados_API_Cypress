@@ -5,5 +5,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    //baseUrl: 'https://deckofcardsapi.com',
+    baseUrl: 'http://165.227.93.41/cgitar'
   },
 });
