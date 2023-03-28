@@ -3,8 +3,12 @@
     "usuarioEmail": "majour.jet1@falltrack.net",
     "usuarioSenha": "majour.jet1@falltrack.net",
     "usuarioTelefone": "1187598745",
+    
     "usuarioSenhaErrada": null,
     "usuarioEmailErrado": "asdasdasd",
+    "usuarioEmailNovo": "majour.jet10@falltrack.net",
+    "usuarioSenhaNovo": "majour.jet10@falltrack.net",
+    
     "msgerroemail": "Utilize um e-mail válido",
     "msgerrosenha": "usuarioNomeCompleto, usuarioEmail, usuarioSenha e usuarioTelefone são obrigatórios.",
     "msguserexiste": "O usuário majour.jet1@falltrack.net já existe."
