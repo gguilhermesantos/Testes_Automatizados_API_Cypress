@@ -12,5 +12,6 @@
   "msguserexiste": "O usuário majour.jet1@falltrack.net já existe.",
   "msgsucessoauth": "Sucesso ao realizar o login",
   "msgsucessouser": "Usuário adicionado com sucesso",
-  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiI5MDkiLCJ1c3Vhcmlvbm9tZSI6InRlc3RlIEd1aSIsInVzdWFyaW9lbWFpbCI6Im1ham91ci5qZXQxQGZhbGx0cmFjay5uZXQiLCJ1c3VhcmlvdGVsZWZvbmUiOiIxMTg3NTk4NzQ1In0.6PR_6LOUMYysXMvMyJi1h8Ijvnx3HT7D1FHxz09Kves"
+  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiI5MDkiLCJ1c3Vhcmlvbm9tZSI6InRlc3RlIEd1aSIsInVzdWFyaW9lbWFpbCI6Im1ham91ci5qZXQxQGZhbGx0cmFjay5uZXQiLCJ1c3VhcmlvdGVsZWZvbmUiOiIxMTg3NTk4NzQ1In0.6PR_6LOUMYysXMvMyJi1h8Ijvnx3HT7D1FHxz09Kves",
+  "asd": "{\n \"asdasd\": \"asdasdasd\",\n \"asdasd\": \"asdasdasd\"\n}"
 }

@@ -60,10 +60,8 @@ it('Teste de Autenticação', function(){
             obj.token = response.body.data.token
             cy.writeFile(filename, obj)
         })
-        //cy.writeFile(filename, {token: response.body.data.token})
-          //cy.writeFile(filename, {token: response.body.data.token}, { flag: 'a+' })
-          cy.log(cy.readFile(filename))
-          /*
+        /*cy.writeFile(filename, {token: response.body.data.token})
+          cy.writeFile(filename, {token: response.body.data.token}, { flag: 'a+' })
           cy.readFile(filename).then((obj) => {
             cy.log(filename)
         })
