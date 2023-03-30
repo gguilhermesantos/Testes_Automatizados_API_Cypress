@@ -85,5 +85,20 @@ it('Teste para pegar certificado sem Ter certificado', () => {
 });
 
 it('Teste para pegar certificado ', () => {
-    
+    cy
+    .request({
+        method: 'GET',
+        url: 'certificados',
+        headers: {
+            'Content-Type': 'application/json',
+            'token': dados.token
+        },
+        body: dados.bodycertificado,
+    }).then(function(response){
+        expect(response.status).to.equal(200),
+        expect(response.body).have.property('message');
+        expect(response.body).have.property('error');
+        expect(response.body.data).have.property('certificadoUrl');
+        expect(response.body.data).have.property('percentualAcerto');
+    });
 });
