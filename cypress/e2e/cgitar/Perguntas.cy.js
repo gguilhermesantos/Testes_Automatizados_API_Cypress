@@ -5,7 +5,7 @@ it('Teste para buscar pergunta sem Autenticacao', () => {
     .request({
         method: 'GET',
         url: 'perguntas',
-        headers: {  
+        headers: {
             'Content-Type': 'application/json'
         },
         failOnStatusCode: false,
@@ -19,7 +19,7 @@ it('Teste para buscar pergunta com Autenticacao errada', () => {
     .request({
         method: 'GET',
         url: 'perguntas',
-        headers: {  
+        headers: {
             'Content-Type': 'application/json',
             'token': dados.usuarioTelefone
         },
@@ -33,7 +33,7 @@ it('Teste para buscar pergunta correta', () => {
     .request({
         method: 'GET',
         url: 'perguntas',
-        headers: {  
+        headers: {
             'Content-Type': 'application/json',
             'token': dados.token
         }
