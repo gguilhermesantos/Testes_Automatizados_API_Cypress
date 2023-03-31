@@ -10,7 +10,7 @@ Estas instruções fornecerão uma cópia do projeto em execução em sua máqui
 ### Pré requisitos
 
 * Ter inicializado e configurado um repositório git
-* Ter conhecimentos na API a ser testado: https://deckofcardsapi.com/ ou https://makeup-api.herokuapp.com/
+* Ter conhecimentos na API a ser testada: http://cgitar.juliodelima.com.br/ e https://deckofcardsapi.com/
 * Ter instalado [Node](https://nodejs.org/en/download/)
 
 ### Instalando
